@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="login.php" method = "get">
+        <fieldset class="user-info">
+            <legend>
+                <label>Personal Details</label>
+            </legend>
+            <div>
+                <label>Name : </label>
+                <input type="text" name="username" required autocomplete="off">
+            </div>
+            
+            <div>
+                <label>Password : </label>
+                <input type="password" name="password" required autocomplete="off">
+            </div>
+            
+            <div>
+                <label>E-mail id : </label>
+                <input type="email" name="email">
+            </div>
+
+            
+            <div>
+                <label>Gender : </label>
+                <input type="radio"  id="male" name="gender" value="male" required autocomplete="off"><label for="male">Male</label>
+                <input type="radio"  id="female" name="gender" value="female"><label for="female">Female</label>
+            </div>
+
+            
+            <div>
+                <label >Contact : </label>
+                <input type="text" pattern="[789][0-9]{9}" required autocomplete="off">
+            </div>
+        </fieldset>
+        
+        <fieldset class="additional-info">
+            <legend>
+                <label >Additional Information </label>
+            </legend>
+            <div>
+                <label >Degree : </label>
+                <select name="qualification">
+                    <option value="Masters">Masters</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="school">school</option>
+                </select>
+            </div>
+            <div>
+                <label>Hobbies : </label>
+                <input type="checkbox" name="hobbies" id="reading" value="reading"><label for="reading">Reading Books</label>
+                <input type="checkbox" name="hobbies" id="cricket" value="cricket"><label for="cricket">Playing Cricket</label>
+            </div>
+            <div>
+                <label >Attach Photo</label>
+                <input type="file" name="photo">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+            
+            
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>

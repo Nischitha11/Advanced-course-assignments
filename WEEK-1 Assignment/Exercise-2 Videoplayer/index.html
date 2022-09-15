@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+         <script src="https://use.fontawesome.com/3eba45c11a.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "video-container" >
+            <div id = "video-content">
+                <video id = "video" poster="https://assets.codepen.io/32795/poster.png">
+                    <source src = "http://media.w3.org/2010/05/sintel/trailer.mp4" type = "video/mp4">
+                </video>  
+                <div id="buttons">
+                    <button class="button" id="play-btn" onclick = "play()">Start</button>
+                    <button class="button" id="pause-btn" onclick = "pause()">Pause</button>
+                    <button class="button"  id="stop-btn" onclick="stop()">Stop</button>
+                </div>
+            </div>
+        </div>
+
+    
+        <script src= "script.js"></script>
+    </body>
+</html>

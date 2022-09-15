@@ -1,0 +1,119 @@
+body {
+    width: 100vw;
+    padding: 20px;
+    
+}
+.section1 {
+    margin-bottom: 25px;
+}
+fieldset> input {
+    border: none;
+    outline: none;
+    padding: 3px 0 8px 8px;
+    margin: 0;
+    
+   
+}
+.container {
+   padding: 20x;
+   margin-bottom: 10px;
+   width: 200px;
+}
+fieldset {
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 7px;
+    margin: 0;
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+   
+}
+fieldset>input::placeholder{
+    color:black;
+}
+
+label + input {
+    padding: 8px 0 8px 12px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+    color: darkgray;
+    width: 92%;
+
+}
+input {
+    display: flex;
+    align-items: center;
+   
+}
+input[name="label2"]::placeholder{
+    color: darkgrey
+}
+
+.section2 {
+    background: lightgrey;
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.area{
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+label {
+    border-color: darkgray;
+    visibility: hidden;
+    
+}
+label[for="text-field4"], label[for="text-field5"], label[for="text-field6"]{
+    visibility: visible;
+    padding-left: 10px;
+   
+}
+.label1{
+    color: black;
+}
+.area {
+    width: 30%;
+    min-width: 200px;
+}
+.area2 {
+    position: relative;  
+}
+
+.area2 i.fa {
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    color: green;
+}
+
+.section2 .container{
+    display: grid;
+    grid-template: auto auto/ repeat(3, 1fr);
+    gap: 20px;
+    padding-left:20px;
+   
+}
+.area3 {
+    position: relative;
+}
+.area3 i.fa {
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    color: red
+}
+
+.section2 input{
+    background-color: lightgrey;
+    border: none;
+    margin-top: 5px;
+}
+input[name="wrong"] {
+    background-color: #ffcccb;
+}
+.section2 input::placeholder {
+    color: black;
+}

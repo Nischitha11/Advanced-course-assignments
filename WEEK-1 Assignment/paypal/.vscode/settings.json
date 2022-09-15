@@ -1,0 +1,6 @@
+{
+    "emmet.preferences": {
+        "javascript": "javascriptreact",
+    },
+    "liveServer.settings.port": 5502
+}

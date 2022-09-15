@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+
+    <title>Form Assignment</title>
+</head>
+<body>
+        <form action = "login.php" method="get">
+            <fieldset>
+                <legend class="personal"> Personal Info</legend>
+
+                <label for ="name" >Name:</label>
+                <input type = "text" class= "input-field" required autocomplete="off" name= "name" value=""/>
+
+                
+                <label for="password"> Password:</label>
+                <input type = "password" class= "input-field" required autocomplete="on"name="password" placeholder = ""/>
+                
+
+            <label for ="email"> E-mail:</label>
+                <input type = "email" name="email"   class= "input-field" id="email" placeholder = "" autocomplete = "off" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+            
+                
+                <div class="container gender-div">
+                    <label class="label"> Gender: </label>
+                    <input type="radio" name = "gender" value = "male" required id = "male"/><label for ="male">Male</label>
+                    <input type="radio" name = "gender" value = "female" required id="female"/><label for ="female">Female</label>
+            </div>
+                
+
+            <div class = "container contact-div">
+                    <label for = "contact" class = "label"> Contact #:</label>
+                    <input type="tel" id="phone" name="contact"  class = "input-field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="555-555-5555" required>
+            </div>
+
+            
+
+            </fieldset>
+                    
+            
+              <fieldset>
+                    <legend> Additional Information</legend>
+                    <div class = "container degree-div">
+                        <label for = "degree" placeholder="--Select Group--">Degree: </label>
+                            <select id="degree" name="degree">
+                                <option value = "HS">High School</option>
+                                <option value = "College">College</option>
+                                <option value = "Masters">Masters</option>
+                                <option value = "Doctorate">Doctorate</option>
+                            </select>
+                    </div>
+                
+                    <br/>
+
+                <div class = " container hobbies-div">
+                
+                    <label for = "hobbies"> Hobbies: </label>
+                    <input type="checkbox" name = "hobbies" value = "Chess"/>Playing Chess </input>
+                    <input type="checkbox" name = "hobbies" value = "Reading" checked/>Reading Books</input>
+                </div>
+                    <br/>
+                <div class = "container photo-div">
+                    <label for ="attachment"> Attach Photo: </label>
+                    <input type="file" id="photo-file" name = "attachment">
+                </div>
+                    
+         </fieldset>
+
+                <div class = " container btn-container">
+                    <button type="submit" class = "button submit-btn" >Submit</button>
+                    <button type = "reset" class = "button reset-btn" > Reset</button>
+                </div>
+        </form>
+</body>
+</html>

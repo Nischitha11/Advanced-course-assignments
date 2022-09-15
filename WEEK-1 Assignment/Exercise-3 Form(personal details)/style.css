@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(209, 175, 240);
+}
+form{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(82, 104, 199);
+    color: white;
+    border-radius: 10px;;
+    
+}
+div{
+    margin: 20px 0px;
+    text-align: center;
+}
